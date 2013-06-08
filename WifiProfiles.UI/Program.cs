@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WifiProfiles.UI
@@ -14,9 +11,20 @@ namespace WifiProfiles.UI
         [STAThread]
         static void Main()
         {
+            if (!SingleInstance.Start()) { return; }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            try
+            {
+                var applicationContext = new WifiApplicationContext();
+                Application.Run(applicationContext);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Wifi Profiles Terminated Unexpectedly",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            SingleInstance.Stop();
         }
     }
 }
