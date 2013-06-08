@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifiProfiles", "WifiProfiles\WifiProfiles.csproj", "{4CE8135A-F8B0-4506-9830-D367859F5999}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifiProfiles.UI", "WifiProfiles.UI\WifiProfiles.UI.csproj", "{B84A8B9D-7CC6-45CF-ABDC-F893DEF55EE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{4CE8135A-F8B0-4506-9830-D367859F5999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CE8135A-F8B0-4506-9830-D367859F5999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CE8135A-F8B0-4506-9830-D367859F5999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84A8B9D-7CC6-45CF-ABDC-F893DEF55EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84A8B9D-7CC6-45CF-ABDC-F893DEF55EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84A8B9D-7CC6-45CF-ABDC-F893DEF55EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84A8B9D-7CC6-45CF-ABDC-F893DEF55EE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
